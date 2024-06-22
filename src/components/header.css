@@ -1,0 +1,50 @@
+
+.Header{
+    background-color: #401240;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+   padding: 0 7rem;
+}
+
+.header-menu{
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    z-index: 99;
+}
+
+.header-menu>li:hover{
+  color: rgb(221, 221, 236);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.Header>h2{
+    margin: 0;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 768px){
+
+
+    .Header{
+        padding: 0 3rem;
+    }
+    .header-menu{
+        position: absolute;
+        background-color: white;
+        color: #1f044f;
+        height: 16rem;
+        width: 10rem;
+        padding: 2rem;
+        top: 4rem;
+        right: 2rem;
+        flex-direction: column;
+    }
+
+}
